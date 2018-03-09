@@ -1,9 +1,11 @@
 import React from 'react';
 import { Input,List,Checkbox,Button} from 'antd';
+import {observer} from 'mobx-react'
 import 'antd/dist/antd.css';
 import './todo.css';
 import Store from './store/store.jsx'
 const store = new Store();
+@observer
 export default class Todo extends React.Component{
     constructor(props){
         super(props);
@@ -17,23 +19,18 @@ export default class Todo extends React.Component{
             this.state.store.addTodo(value);
             e.target.value = ""
         }
-        this.setState({store})
     }
     changeTodoDone = (key)=>{
         this.state.store.changeTodoDone(key);
-        this.setState({store})
     }
     changeAllTodosDone =()=>{
         this.state.store.changeAllTodosDone(this.state.store.isAllCheck);
-        this.setState({store})
     }
     deleteTodo =(key)=>{
         this.state.store.deleteTodo(key);
-        this.setState({store})
     }
     deleteAllTodosDone =()=>{
         this.state.store.deleteAllTodosDone();
-        this.setState({store})
     }
     render(){
         return (
