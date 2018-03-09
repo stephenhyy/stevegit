@@ -1,0 +1,19 @@
+.pannel{
+    width: 500px;
+    margin: 0 auto;
+}
+.ant-list-item-content,.footer-content{
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+}
+.btn-right,.btn-right-footer{
+    position: absolute;
+    right: 0;
+}
+.btn-right{
+    display: none
+}
+.ant-list-item:hover .btn-right{
+    display: block;
+}
