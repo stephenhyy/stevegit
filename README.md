@@ -11,7 +11,8 @@
 >antd：<https://ant.design/>  
 
 -----
-## cd stevegit
-## npm install
-## npm start
+## 如何运行
+>cd stevegit       
+>npm install                   
+>npm start     
 
