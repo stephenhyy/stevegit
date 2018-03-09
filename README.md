@@ -6,7 +6,7 @@
 3、TODO列表就是基于mobx开发的，用store管理状态，可以看出复杂的联动使用很少的代码。             
 如果想系统学习可以移步相关文档。   
 >react：<https://reactjs.org/>   
->react-router：<https://reacttraining.com/react-router>   
+>react-router：<http://react-guide.github.io/react-router-cn/docs/API.html>   
 >mobx：<http://cn.mobx.js.org/>    
 >antd：<https://ant.design/>  
 
